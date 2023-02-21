@@ -11,7 +11,7 @@ public class CarTest {
     @Test
     public void getNameOfCar() {
         car = new Car("Beetle");
-        assertEquals("Beetle", car.getNameOfCar());
+        assertEquals("Beetle", car.getName());
     }
 
 }
