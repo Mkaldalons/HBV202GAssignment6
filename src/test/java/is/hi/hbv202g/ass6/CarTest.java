@@ -5,10 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class CarTest {
+
+    private Car car;
+
     @Test
     public void getNameOfCar() {
-        Car car=new Car("Beetle");
-        CarOwner carOwner = new CarOwner("John Doe", car);
+        car = new Car("Beetle");
         assertEquals("Beetle", car.getNameOfCar());
     }
 

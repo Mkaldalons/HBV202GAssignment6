@@ -6,10 +6,13 @@ import static org.junit.Assert.*;
 
 public class CarOwnerTest {
 
+    private Car car;
+    private CarOwner carOwner;
+
     @Test
     public void getName() {
-        Car car=new Car("Beetle");
-        CarOwner carOwner = new CarOwner("John Doe", car);
+        car = new Car("Beetle");
+        carOwner = new CarOwner("John Doe", car);
         assertEquals("John Doe", carOwner.getName());
     }
 
