@@ -8,16 +8,17 @@ import static org.junit.Assert.assertEquals;
 public class CarTest {
 
 
+    public static final String BEETLE = "Beetle";
     private Car car;
 
     @Before
     public void setUp() throws Exception {
-        car = new Car("Beetle");
+        car = new Car(BEETLE);
     }
 
     @Test
     public void getNameOfCar() {
-        assertEquals("Beetle", car.getName());
+        assertEquals(BEETLE, car.getName());
     }
 
 }
