@@ -12,12 +12,12 @@ public class CarOwnerTest {
 
     @Before
     public void setUp() throws Exception {
+        car = new Car("Beetle");
         carOwner = new CarOwner("John Doe", car);
     }
 
     @Test
     public void getName() {
-        car = new Car("Beetle");
         assertEquals("John Doe", carOwner.getName());
     }
 
