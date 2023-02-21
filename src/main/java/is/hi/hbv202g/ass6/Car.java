@@ -3,7 +3,7 @@ package is.hi.hbv202g.ass6;
 class Car {
     String name;
 
-    public String getName() {
+    public String getNameOfCar() {
         return name;
     }
 
